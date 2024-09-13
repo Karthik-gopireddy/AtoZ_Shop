@@ -1,0 +1,770 @@
+{
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "json-server --watch db.json --port $PORT"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+  ,
+ "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 16",
+      "price": 999.99,
+      "category": "Mobiles",
+      "image": "https://th.bing.com/th/id/OIP.kRdCLlZdlqarPnjRVZK8FAHaEK?w=1600&h=900&rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23",
+      "price": 849.99,
+      "category": "Mobiles",
+      "image": "https://cdn1.smartprix.com/rx-izLSMVlI0-w1200-h1200/zLSMVlI0.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Google Pixel 7",
+      "price": 599.99,
+      "category": "Mobiles",
+      "image": "https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-pxl7/lemongrass/front.png"
+    },
+    {
+      "id": 4,
+      "name": "OnePlus 11",
+      "price": 749.99,
+      "category": "Mobiles",
+      "image": "https://image01.oneplus.net/ebp/202304/11/1-m00-43-ec-ckvtlmq0_d2afrwnaanmzr5p60g201.png"
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi Mi 11",
+      "price": 499.99,
+      "category": "Mobiles",
+      "image": "https://www.gizmochina.com/wp-content/uploads/2020/12/Xiaomi-Mi-11-All-colors-c-e1612792179662-600x600.jpg"
+    },
+    {
+      "id": 6,
+      "name": "MacBook Pro 16",
+      "price": 2399.99,
+      "category": "Laptops",
+      "image": "https://th.bing.com/th/id/OIP.POvhNa1jCfiyO9Tr06KH5gHaG_?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 7,
+      "name": "Dell XPS 13",
+      "price": 1299.99,
+      "category": "Laptops",
+      "image": "https://th.bing.com/th/id/OIP.fS3_FbYk7HUSltO7unJ2mQHaE8?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 8,
+      "name": "HP Spectre x360",
+      "price": 1399.99,
+      "category": "Laptops",
+      "image": "https://th.bing.com/th/id/OIP.mWsPof8EnmQ3ifLs7JpBHQHaFc?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 9,
+      "name": "Lenovo ThinkPad X1",
+      "price": 1599.99,
+      "category": "Laptops",
+      "image": "https://th.bing.com/th/id/OIP.mWsPof8EnmQ3ifLs7JpBHQHaFc?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 10,
+      "name": "Asus ZenBook 14",
+      "price": 1199.99,
+      "category": "Laptops",
+      "image": "https://th.bing.com/th/id/OIP.KqYfx3hIiHsQyr3G-gT_xAHaHl?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 11,
+      "name": "Men's T-Shirt",
+      "price": 19.99,
+      "category": "Clothes",
+      "image": "https://i5.walmartimages.com/asr/fb6d1559-eb97-4672-a841-652971cf9b0c_1.a0b0d5d72ebb96285b6ffe2565195b50.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Women's Dress",
+      "price": 49.99,
+      "category": "Clothes",
+      "image": "https://th.bing.com/th/id/OIP.xxoBjIWeDQfEKDC8_sXZ1wAAAA?w=460&h=613&rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 13,
+      "name": "Men's Jeans",
+      "price": 39.99,
+      "category": "Clothes",
+      "image": "https://th.bing.com/th/id/OIP.c-K05e01ArQrlN1SsumYUwAAAA?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 14,
+      "name": "Women's Jacket",
+      "price": 89.99,
+      "category": "Clothes",
+      "image": "https://th.bing.com/th/id/OIP.CnAWvo5SkzrN6p1kGJfVNwAAAA?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 15,
+      "name": "Men's Sneakers",
+      "price": 59.99,
+      "category": "Shoes",
+      "image": "https://cdnd.lystit.com/photos/3116-2015/07/22/vince-black-bale-leather-sneaker-product-1-680746413-normal.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "Sony WH-1000XM4 Headphones",
+      "price": 349.99,
+      "category": "Electronics",
+      "image": "https://th.bing.com/th/id/OIP.fKub3ghrUWpU9FWGJmIw8gAAAA?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 17,
+      "name": "Samsung QLED TV",
+      "price": 1299.99,
+      "category": "Electronics",
+      "image": "https://th.bing.com/th/id/OIP.yzps1MEJCpcRLYLO8WxpLwHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 18,
+      "name": "Apple Watch Series 8",
+      "price": 399.99,
+      "category": "Electronics",
+      "image": "https://th.bing.com/th/id/OIP.djCOEI4CE2mu_zWwgFqLuAAAAA?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 19,
+      "name": "GoPro HERO10",
+      "price": 499.99,
+      "category": "Electronics",
+      "image": "https://cdn.shopify.com/s/files/1/2532/7020/products/GoPro-HERO10-Black-Waterproof-Action-Camera-with-Front-LCD-and-Touch-Rear-Screens-side.jpg?v=1633684089"
+    },
+    {
+      "id": 20,
+      "name": "Kindle Paperwhite",
+      "price": 129.99,
+      "category": "Electronics",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Kindle_Paperwhite_3G.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Nike Air Max",
+      "price": 99.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=Nike+Air+Max"
+    },
+    {
+      "id": 22,
+      "name": "Adidas Ultraboost",
+      "price": 179.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=Adidas+Ultraboost"
+    },
+    {
+      "id": 23,
+      "name": "Puma RS-X",
+      "price": 119.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=Puma+RS-X"
+    },
+    {
+      "id": 24,
+      "name": "Reebok Classic",
+      "price": 89.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=Reebok+Classic"
+    },
+    {
+      "id": 25,
+      "name": "New Balance 990v5",
+      "price": 159.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=New+Balance+990v5"
+    },
+    {
+      "id": 26,
+      "name": "Ninja Foodi Pressure Cooker",
+      "price": 149.99,
+      "category": "Kitchen Appliances",
+      "image": "https://via.placeholder.com/200x150?text=Ninja+Foodi+Pressure+Cooker"
+    },
+    {
+      "id": 27,
+      "name": "Instant Pot Duo",
+      "price": 89.99,
+      "category": "Kitchen Appliances",
+      "image": "https://via.placeholder.com/200x150?text=Instant+Pot+Duo"
+    },
+    {
+      "id": 28,
+      "name": "Breville Barista Express",
+      "price": 799.99,
+      "category": "Kitchen Appliances",
+      "image": "https://via.placeholder.com/200x150?text=Breville+Barista+Express"
+    },
+    {
+      "id": 29,
+      "name": "KitchenAid Stand Mixer",
+      "price": 299.99,
+      "category": "Kitchen Appliances",
+      "image": "https://via.placeholder.com/200x150?text=KitchenAid+Stand+Mixer"
+    },
+    {
+      "id": 30,
+      "name": "Dyson V11 Vacuum",
+      "price": 599.99,
+      "category": "Kitchen Appliances",
+      "image": "https://via.placeholder.com/200x150?text=Dyson+V11+Vacuum"
+    },
+    {
+      "id": 31,
+      "name": "The Great Gatsby",
+      "price": 10.99,
+      "category": "Books",
+      "image": "https://via.placeholder.com/200x150?text=The+Great+Gatsby"
+    },
+    {
+      "id": 32,
+      "name": "1984 by George Orwell",
+      "price": 9.99,
+      "category": "Books",
+      "image": "https://via.placeholder.com/200x150?text=1984+by+George+Orwell"
+    },
+    {
+      "id": 33,
+      "name": "To Kill a Mockingbird",
+      "price": 12.99,
+      "category": "Books",
+      "image": "https://via.placeholder.com/200x150?text=To+Kill+a+Mockingbird"
+    },
+    {
+      "id": 34,
+      "name": "Pride and Prejudice",
+      "price": 8.99,
+      "category": "Books",
+      "image": "https://via.placeholder.com/200x150?text=Pride+and+Prejudice"
+    },
+    {
+      "id": 35,
+      "name": "The Catcher in the Rye",
+      "price": 11.99,
+      "category": "Books",
+      "image": "https://via.placeholder.com/200x150?text=The+Catcher+in+the+Rye"
+    },
+    {
+      "id": 36,
+      "name": "LG OLED TV",
+      "price": 1799.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=LG+OLED+TV"
+    },
+    {
+      "id": 37,
+      "name": "Sony PlayStation 5",
+      "price": 499.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Sony+PlayStation+5"
+    },
+    {
+      "id": 38,
+      "name": "Xbox Series X",
+      "price": 499.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Xbox+Series+X"
+    },
+    {
+      "id": 39,
+      "name": "Apple AirPods Pro",
+      "price": 249.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Apple+AirPods+Pro"
+    },
+    {
+      "id": 40,
+      "name": "Google Nest Hub",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Google+Nest+Hub"
+    },
+    {
+      "id": 41,
+      "name": "Fujifilm X-T4 Camera",
+      "price": 1699.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Fujifilm+X-T4"
+    },
+    {
+      "id": 42,
+      "name": "Nikon D850 Camera",
+      "price": 2999.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Nikon+D850"
+    },
+    {
+      "id": 43,
+      "name": "Canon EOS R5",
+      "price": 3899.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Canon+EOS+R5"
+    },
+    {
+      "id": 44,
+      "name": "GoPro HERO11 Black",
+      "price": 549.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=GoPro+HERO11+Black"
+    },
+    {
+      "id": 45,
+      "name": "Apple iPad Pro",
+      "price": 799.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Apple+iPad+Pro"
+    },
+    {
+      "id": 46,
+      "name": "Lenovo Yoga C940",
+      "price": 1399.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Lenovo+Yoga+C940"
+    },
+    {
+      "id": 47,
+      "name": "HP Envy 14",
+      "price": 1199.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=HP+Envy+14"
+    },
+    {
+      "id": 48,
+      "name": "Acer Swift 3",
+      "price": 899.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Acer+Swift+3"
+    },
+    {
+      "id": 49,
+      "name": "Asus ROG Zephyrus",
+      "price": 1599.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Asus+ROG+Zephyrus"
+    },
+    {
+      "id": 50,
+      "name": "Razer Blade 15",
+      "price": 1999.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Razer+Blade+15"
+    },
+    {
+      "id": 51,
+      "name": "Nike Air Force 1",
+      "price": 89.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=Nike+Air+Force+1"
+    },
+    {
+      "id": 52,
+      "name": "Adidas Superstar",
+      "price": 79.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=Adidas+Superstar"
+    },
+    {
+      "id": 53,
+      "name": "Converse Chuck Taylor",
+      "price": 69.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=Converse+Chuck+Taylor"
+    },
+    {
+      "id": 54,
+      "name": "Vans Old Skool",
+      "price": 59.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=Vans+Old+Skool"
+    },
+    {
+      "id": 55,
+      "name": "New Balance 574",
+      "price": 89.99,
+      "category": "Shoes",
+      "image": "https://via.placeholder.com/200x150?text=New+Balance+574"
+    },
+    {
+      "id": 56,
+      "name": "Garmin Forerunner 945",
+      "price": 599.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Garmin+Forerunner+945"
+    },
+    {
+      "id": 57,
+      "name": "Apple Mac Mini M2",
+      "price": 699.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Apple+Mac+Mini+M2"
+    },
+    {
+      "id": 58,
+      "name": "Microsoft Surface Pro 9",
+      "price": 999.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Microsoft+Surface+Pro+9"
+    },
+    {
+      "id": 59,
+      "name": "Samsung Galaxy Watch 6",
+      "price": 349.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Samsung+Galaxy+Watch+6"
+    },
+    {
+      "id": 60,
+      "name": "Sony Alpha a7 IV",
+      "price": 2499.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Sony+Alpha+a7+IV"
+    },
+    {
+      "id": 61,
+      "name": "Roku Streaming Stick 4K",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Roku+Streaming+Stick+4K"
+    },
+    {
+      "id": 62,
+      "name": "Bose QuietComfort 35 II",
+      "price": 299.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Bose+QuietComfort+35+II"
+    },
+    {
+      "id": 63,
+      "name": "Apple MacBook Air M2",
+      "price": 1199.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Apple+MacBook+Air+M2"
+    },
+    {
+      "id": 64,
+      "name": "HP Pavilion x360",
+      "price": 999.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=HP+Pavilion+x360"
+    },
+    {
+      "id": 65,
+      "name": "Dell Inspiron 15",
+      "price": 799.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Dell+Inspiron+15"
+    },
+    {
+      "id": 66,
+      "name": "Asus VivoBook 15",
+      "price": 699.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Asus+VivoBook+15"
+    },
+    {
+      "id": 67,
+      "name": "MSI Creator 15",
+      "price": 1799.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=MSI+Creator+15"
+    },
+    {
+      "id": 68,
+      "name": "Lenovo Legion 5 Pro",
+      "price": 1599.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Lenovo+Legion+5+Pro"
+    },
+    {
+      "id": 69,
+      "name": "Samsung Galaxy S23",
+      "price": 999.99,
+      "category": "Phones",
+      "image": "https://via.placeholder.com/200x150?text=Samsung+Galaxy+S23"
+    },
+    {
+      "id": 70,
+      "name": "iPhone 15",
+      "price": 1099.99,
+      "category": "Phones",
+      "image": "https://via.placeholder.com/200x150?text=iPhone+15"
+    },
+    {
+      "id": 71,
+      "name": "Google Pixel 8",
+      "price": 899.99,
+      "category": "Phones",
+      "image": "https://via.placeholder.com/200x150?text=Google+Pixel+8"
+    },
+    {
+      "id": 72,
+      "name": "OnePlus 11",
+      "price": 799.99,
+      "category": "Phones",
+      "image": "https://via.placeholder.com/200x150?text=OnePlus+11"
+    },
+    {
+      "id": 73,
+      "name": "Xiaomi Mi 13",
+      "price": 749.99,
+      "category": "Phones",
+      "image": "https://via.placeholder.com/200x150?text=Xiaomi+Mi+13"
+    },
+    {
+      "id": 74,
+      "name": "Bose SoundLink Revolve",
+      "price": 199.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Bose+SoundLink+Revolve"
+    },
+    {
+      "id": 75,
+      "name": "Sonos One",
+      "price": 179.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Sonos+One"
+    },
+    {
+      "id": 76,
+      "name": "JBL Charge 5",
+      "price": 149.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=JBL+Charge+5"
+    },
+    {
+      "id": 77,
+      "name": "Harman Kardon Onyx Studio 7",
+      "price": 299.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Harman+Kardon+Onyx+Studio+7"
+    },
+    {
+      "id": 78,
+      "name": "Anker Soundcore Flare 2",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Anker+Soundcore+Flare+2"
+    },
+    {
+      "id": 79,
+      "name": "Kindle Paperwhite",
+      "price": 129.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Kindle+Paperwhite"
+    },
+    {
+      "id": 80,
+      "name": "Oculus Quest 2",
+      "price": 299.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Oculus+Quest+2"
+    },
+    {
+      "id": 81,
+      "name": "Fitbit Charge 5",
+      "price": 149.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Fitbit+Charge+5"
+    },
+    {
+      "id": 82,
+      "name": "Sony WH-1000XM5",
+      "price": 349.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Sony+WH-1000XM5"
+    },
+    {
+      "id": 83,
+      "name": "Huawei Watch GT 3",
+      "price": 229.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Huawei+Watch+GT+3"
+    },
+    {
+      "id": 84,
+      "name": "Jabra Elite 7 Pro",
+      "price": 199.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Jabra+Elite+7+Pro"
+    },
+    {
+      "id": 85,
+      "name": "Bose QuietComfort Earbuds",
+      "price": 279.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Bose+QuietComfort+Earbuds"
+    },
+    {
+      "id": 86,
+      "name": "Apple Watch Series 8",
+      "price": 399.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Apple+Watch+Series+8"
+    },
+    {
+      "id": 87,
+      "name": "Garmin Venu 2",
+      "price": 399.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Garmin+Venu+2"
+    },
+    {
+      "id": 88,
+      "name": "Xiaomi Mi Band 7",
+      "price": 49.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Xiaomi+Mi+Band+7"
+    },
+    {
+      "id": 89,
+      "name": "Samsung Galaxy Buds2",
+      "price": 149.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Samsung+Galaxy+Buds2"
+    },
+    {
+      "id": 90,
+      "name": "Apple iMac 24-inch",
+      "price": 1299.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Apple+iMac+24-inch"
+    },
+    {
+      "id": 91,
+      "name": "Acer Predator Helios 300",
+      "price": 1499.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Acer+Predator+Helios+300"
+    },
+    {
+      "id": 92,
+      "name": "HP Spectre x360",
+      "price": 1399.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=HP+Spectre+x360"
+    },
+    {
+      "id": 93,
+      "name": "Dell XPS 13",
+      "price": 1199.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Dell+XPS+13"
+    },
+    {
+      "id": 94,
+      "name": "Apple MacBook Pro 16-inch",
+      "price": 2499.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Apple+MacBook+Pro+16-inch"
+    },
+    {
+      "id": 95,
+      "name": "Microsoft Surface Laptop 4",
+      "price": 1299.99,
+      "category": "Laptops",
+      "image": "https://via.placeholder.com/200x150?text=Microsoft+Surface+Laptop+4"
+    },
+    {
+      "id": 96,
+      "name": "Bose Frames",
+      "price": 199.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Bose+Frames"
+    },
+    {
+      "id": 97,
+      "name": "JBL Pulse 4",
+      "price": 299.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=JBL+Pulse+4"
+    },
+    {
+      "id": 98,
+      "name": "Sonos Arc",
+      "price": 799.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Sonos+Arc"
+    },
+    {
+      "id": 99,
+      "name": "Apple HomePod mini",
+      "price": 99.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Apple+HomePod+mini"
+    },
+    {
+      "id": 100,
+      "name": "Amazon Echo Show 10",
+      "price": 249.99,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/200x150?text=Amazon+Echo+Show+10"
+    }
+  ],
+  "orders": [
+    {
+      "id": "fe22",
+      "items": [
+        {
+          "id": 1,
+          "name": "iPhone 14 Pro",
+          "price": 999.99,
+          "category": "Mobiles",
+          "image": "https://via.placeholder.com/200x150?text=iPhone+14+Pro",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Samsung Galaxy S23",
+          "price": 849.99,
+          "category": "Mobiles",
+          "image": "https://via.placeholder.com/200x150?text=Samsung+Galaxy+S23",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "name": "Google Pixel 7",
+          "price": 599.99,
+          "category": "Mobiles",
+          "image": "https://via.placeholder.com/200x150?text=Google+Pixel+7",
+          "quantity": 1
+        }
+      ],
+      "billing": {
+        "fullName": "karthik Gopireddy",
+        "email": "karthikgopireddy8978@gmail.com",
+        "address": "301,batasingaram ,hyderabad",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "zipCode": "500074",
+        "cardNumber": "1234567890123456",
+        "expMonth": "11",
+        "expYear": "2026",
+        "cvv": "123"
+      }
+    }
+  ]
+}

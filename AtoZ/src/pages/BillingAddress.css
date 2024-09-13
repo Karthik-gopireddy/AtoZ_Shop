@@ -1,0 +1,94 @@
+/* General input styling */
+.input-class {
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 70%;
+  }
+  
+  /* General label styling */
+  .label-class {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Select styling */
+  .select-class {
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 75%;
+  }
+  .select-class-year{
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 150px;
+
+  }
+  .stateZipcontainer{
+    display: flex;
+    
+  }
+  .yearcontainer{
+    margin-right: 50px;
+  }
+  .yearandcvvcontainor{
+    display: flex;
+    
+   
+    width: 370px !important;
+  }
+  
+  /* Flex item styling */
+  .flex-item-class {
+    flex: 1;
+    padding: 1rem;
+    background-color: #fffdfd;
+    width: 70%;
+    padding: 30px;
+  }
+  .flex-item-class h2{
+    text-align: start;
+  }
+  .acceptcard{
+    height: 60px;
+    width: 150px;
+  }
+  
+  /* Flex container styling */
+  .flex-container-class {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color:rgb(21, 37, 95);
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    
+  }
+  
+  @media (min-width: 768px) {
+    .flex-container-class {
+      flex-direction: row;
+    }
+  }
+  
+  /* Button styling */
+  .button-class {
+    background-color: #00b4d8;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 75%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-class:hover {
+    background-color: rgba(0, 180, 216, 0.8);
+  }
+  
